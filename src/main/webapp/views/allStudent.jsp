@@ -29,7 +29,7 @@
                 <li><a href="home">Home</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="gurukul">Gurukul</a></li>
-                <li><a href="contect">Contect Us</a></li>
+                <li><a href="contect">Contact Us</a></li>
                
             </ul>
 
@@ -38,15 +38,16 @@
 
     </nav>
 <table style="border: 5px black;">
+<h2>${msg}</h2>
 <tr>
 <th>Id</th>
 <th>Name</th>
 <th>Password</th>
-<th>P Name</th>
-<th>Email </th>
-<th>Age</th>
+<th>Father Name</th>
+<th>Email</th>
+<th>Date of Birth</th>
 <th>Grade</th>
-<th>Standard</th>
+<th>Last Class</th>
 
 
 </tr>
@@ -59,11 +60,11 @@ List<Student> allstud = (List<Student>) request.getAttribute("allstud");
 <td><%=s.getId() %></td>
 <td><%=s.getName() %></td>
 <td><%=s.getPassword() %></td>
-<td><%=s.getPname() %></td>
+<td><%=s.getFatherName() %></td>
 <td><%=s.getEmail() %></td>
-<td><%=s.getAge() %></td>
+<td><%=s.getDob() %></td>
 <td><%=s.getGrade() %></td>
-<td><%=s.getStandard() %></td>
+<td><%=s.getLastClass() %></td>
 
 
 
@@ -73,7 +74,7 @@ List<Student> allstud = (List<Student>) request.getAttribute("allstud");
 <% } %>
 </table>
 
-
+ 
   <footer style="margin-top: 50px">
 
     <div class="row">
