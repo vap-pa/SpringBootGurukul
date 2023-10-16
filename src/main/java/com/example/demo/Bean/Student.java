@@ -4,98 +4,124 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 @Entity
 public class Student {
 
-	@Id
+	
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String name;
 	private String password;
-	private String pname;
+	private String fatherName;
+	@Id
 	private String email;
-	private String age;
-	private String standard;
-	private int grade;
+	@Temporal(TemporalType.DATE)
+	private String dob;
+	private String lastClass;
+	private String grade;
 	private String address;
+	
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Student(int id, String name, String password, String pname, String email, String age, String standard,
-			int grade, String address) {
+
+	public Student(int id, String name, String password, String fatherName, String email, String dob, String lastClass,
+			String grade, String address) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.password = password;
-		this.pname = pname;
+		this.fatherName = fatherName;
 		this.email = email;
-		this.age = age;
-		this.standard = standard;
+		this.dob = dob;
+		this.lastClass = lastClass;
 		this.grade = grade;
 		this.address = address;
 	}
+
 	public int getId() {
 		return id;
 	}
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getPname() {
-		return pname;
+
+	public String getFatherName() {
+		return fatherName;
 	}
-	public void setPname(String pname) {
-		this.pname = pname;
+
+	public void setFatherName(String fatherName) {
+		this.fatherName = fatherName;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getAge() {
-		return age;
+
+	public String getDob() {
+		return dob;
 	}
-	public void setAge(String age) {
-		this.age = age;
+
+	public void setDob(String dob) {
+		this.dob = dob;
 	}
-	public String getStandard() {
-		return standard;
+
+	public String getLastClass() {
+		return lastClass;
 	}
-	public void setStandard(String standard) {
-		this.standard = standard;
+
+	public void setLastClass(String lastClass) {
+		this.lastClass = lastClass;
 	}
-	public int getGrade() {
+
+	public String getGrade() {
 		return grade;
 	}
-	public void setGrade(int grade) {
+
+	public void setGrade(String grade) {
 		this.grade = grade;
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", password=" + password + ", pname=" + pname + ", email="
-				+ email + ", age=" + age + ", standard=" + standard + ", grade=" + grade + ", address=" + address + "]";
+		return "Student [id=" + id + ", name=" + name + ", password=" + password + ", fatherName=" + fatherName
+				+ ", email=" + email + ", dob=" + dob + ", lastClass=" + lastClass + ", grade=" + grade + ", address="
+				+ address + "]";
 	}
-	
+		
 	
 }
 
