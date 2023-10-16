@@ -17,7 +17,7 @@
 <body>
 <%@include file="header.jsp" %>	
 
-    <form action="ragistration" method="post">
+    <form action="registration" method="post">
     <h2>School Registration Form</h2>
     <h1>${msg}</h1>
         <div class="form-group">
@@ -30,19 +30,19 @@
         </div>
          <div class="form-group">
             <label for="name">Parent Name:</label>
-            <input type="text" id="name" name="pname" required>
+            <input type="text" id="name" name="fatherName" required>
         </div>
         <div class="form-group">
             <label for="name">EmailId:</label>
             <input type="text" id="name" name="email" required>
         </div>
         <div class="form-group">
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required>
+            <label for="age">Date of Birth :</label>
+            <input type="date" id="age" name="dob" required>
         </div>
         <div class="form-group">
-            <label for="grade">Standard :</label>
-            <input type="text" id="grade" name="standard" required>
+            <label for="grade">Last Class :</label>
+            <input type="text" id="grade" name="lastClass" required>
         </div>
         <div class="form-group">
             <label for="grade">Grade:</label>
