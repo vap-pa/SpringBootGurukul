@@ -35,9 +35,9 @@ public class HomeCon {
 		return "contect";
 		
 	}
-	@RequestMapping("/ragistration")
+	@RequestMapping("/registration")
 	public String ragistration() {
-		return "Ragistration";
+		return "Registration";
 		
 	}
 	@RequestMapping("/update")
@@ -48,6 +48,28 @@ public class HomeCon {
 	@RequestMapping("/delete")
 	public String delete() {
 		return "delete";
+		
+	}
+	@RequestMapping("/admin")
+	public String admin() {
+		return "Admin";
+		
+	}
+	@RequestMapping("/adminportal")
+	public String adminPortal() {
+		return "AdminPortal";
+		
+	}
+	
+	@RequestMapping("/Course")
+	public String Course() {
+		return "Course";
+		
+	}
+	
+	@RequestMapping("/thankyou")
+	public String thank() {
+		return "thnakyou";
 		
 	}
 }
