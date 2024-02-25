@@ -20,7 +20,7 @@ Welcome to Gurukul School Management System, a web application that facilitates 
 
 ## Technologies Used
 
-- Frontend: HTML, CSS, JavaScript
+- Frontend: JSP, CSS, JavaScript
 - Backend: Java and Spring Framework 
 - Database: MySQL 
 - Version Control: Git
