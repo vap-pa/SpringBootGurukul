@@ -1,0 +1,8 @@
+com\example\demo\Bean\BookCourse.class
+com\example\demo\DemoApplication.class
+com\example\demo\Repository\BookRepository.class
+com\example\demo\Service\StudentService.class
+com\example\demo\Bean\Student.class
+com\example\demo\Controller\StudentController.class
+com\example\demo\Repository\StudentRepository.class
+com\example\demo\Controller\HomeCon.class
